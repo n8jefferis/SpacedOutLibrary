@@ -1,0 +1,7 @@
+C:\Users\n8jef\Desktop\SpacedOutLibrary\SpacedOutLibrary\bin\Debug\SpacedOutLibrary.exe.config
+C:\Users\n8jef\Desktop\SpacedOutLibrary\SpacedOutLibrary\bin\Debug\SpacedOutLibrary.exe
+C:\Users\n8jef\Desktop\SpacedOutLibrary\SpacedOutLibrary\bin\Debug\SpacedOutLibrary.pdb
+C:\Users\n8jef\Desktop\SpacedOutLibrary\SpacedOutLibrary\obj\Debug\SpacedOutLibrary.csprojAssemblyReference.cache
+C:\Users\n8jef\Desktop\SpacedOutLibrary\SpacedOutLibrary\obj\Debug\SpacedOutLibrary.csproj.CoreCompileInputs.cache
+C:\Users\n8jef\Desktop\SpacedOutLibrary\SpacedOutLibrary\obj\Debug\SpacedOutLibrary.exe
+C:\Users\n8jef\Desktop\SpacedOutLibrary\SpacedOutLibrary\obj\Debug\SpacedOutLibrary.pdb
