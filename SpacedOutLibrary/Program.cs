@@ -15,7 +15,10 @@ namespace SpacedOutLibrary
             b.Title = "Star Wars";
             b.Author = "George Lucas";
             b.Status = false;
-            b.DueDate = new DateTime(1900, 01, 01); 
+
+            DateTime dat = new DateTime();
+            b.DueDate = dat.ToString("01/01/1900");
+            Console.Write(b.DueDate);
 
             List<Book> Books = new List<Book>();
             Books.Add(b);

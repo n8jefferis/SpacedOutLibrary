@@ -25,7 +25,7 @@ namespace SpacedOutLibrary
             Console.WriteLine($"Title: {Displaybook.Title}");
             Console.WriteLine($"Author: {Displaybook.Author}");
             Console.WriteLine($"Status: {(Displaybook.Status == true ? "CHECKED OUT" : "Available" )}");
-            Console.WriteLine($"Due Date: {(Displaybook.Status == false ? "" : Displaybook.DueDate.ToString("dd/MM/yyyy") )}");
+            Console.WriteLine($"Due Date: {(Displaybook.Status == false ? "" : Displaybook.DueDate.ToString() )}");
         }
         //public string DateSplit(DateTime )
         //{
