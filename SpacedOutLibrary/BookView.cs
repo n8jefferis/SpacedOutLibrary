@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SpacedOutLibrary
 {
-    class BookView
+    public class BookView
     {
         //props
         public Book Displaybook { get; set; }
@@ -17,16 +17,11 @@ namespace SpacedOutLibrary
             this.Displaybook = DisplayBook;
         }
 
+
         //meth
-        public void View()
-        {
-            Console.WriteLine("Here is your book's information: ");
-            Console.WriteLine();
-            Console.WriteLine($"Title: {Displaybook.Title}");
-            Console.WriteLine($"Author: {Displaybook.Author}");
-            Console.WriteLine($"Status: {(Displaybook.Status == true ? "CHECKED OUT" : "Available" )}");
-            Console.WriteLine($"Due Date: {(Displaybook.Status == false ? "" : Displaybook.DueDate.ToString() )}");
-        }
+        
+
+
         //public string DateSplit(DateTime )
         //{
         //    string temp = DueDate.ToString();
