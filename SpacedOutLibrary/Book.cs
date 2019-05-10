@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SpacedOutLibrary
 {
-    class Book
+    public class Book
     {
         //props
         public string Title {get; set;}

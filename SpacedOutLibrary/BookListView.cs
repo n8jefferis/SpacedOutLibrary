@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace SpacedOutLibrary
 {
-    class BookListView
+    public class BookListView
     {
         //prop
-        public List<Book> DisplayBooks {get; set;}
+        public List<Book> DisplayBooks { get; set; }
         
         //const
         public BookListView (List<Book> DisplayBooks)
@@ -22,12 +22,13 @@ namespace SpacedOutLibrary
         {
             Console.Clear();
             Console.WriteLine("Welcome to the Spaced Out Library");
+            Console.WriteLine();
             Console.WriteLine("We offer a unique selection of sci-fi literature");
             Console.WriteLine();
-            Console.WriteLine("Title:               Author:              Due Date:");
+            Console.WriteLine(" # TITLE:                    AUTHOR:             DUE DATE:");
             for(int i = 0; i < DisplayBooks.Count; i++)
             {
-                Console.WriteLine($"{DisplayBooks[i].Title,-20} {DisplayBooks[i].Author,-20} {(DisplayBooks[i].Status == true ? "Available" : DisplayBooks[i].DueDate.ToString())}");
+                Console.WriteLine($"{i + 1, 2} {DisplayBooks[i].Title,-25} {DisplayBooks[i].Author,-19} {(DisplayBooks[i].Status == false ? "Available" : DisplayBooks[i].DueDate.ToString())}");
             }
         }
 
