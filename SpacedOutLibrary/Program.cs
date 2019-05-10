@@ -8,34 +8,19 @@ namespace SpacedOutLibrary
 {
     class Program
     {
+
         static void Main(string[] args)
         {
-            Book b = new Book();
 
-            b.Title = "Star Wars";
-            b.Author = "George Lucas";
-            b.Status = false;
+            Controller c = new Controller();
+            c.Run();
 
-            DateTime dat = new DateTime();
-            b.DueDate = dat.ToString("01/01/1900");
-            Console.Write(b.DueDate);
-
-            List<Book> Books = new List<Book>();
-            Books.Add(b);
-           
-
-            BookListView blv = new BookListView(Books);
-
-            blv.Display();
-
-            
-
-
-
-
-
-
-
+            // For STEVE'S Checkout Class
+            //DateTime thismoment = DateTime.Today;
+            //DateTime twoWeeksFromNow = thismoment.AddDays(14);
+            //string date = twoWeeksFromNow.ToString();
+            //string date2 = date.Substring(0, date.IndexOf(' '));
+            //Console.WriteLine(date2);
 
         }
     }
