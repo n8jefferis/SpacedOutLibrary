@@ -46,6 +46,8 @@
     <Compile Include="Book.cs" />
     <Compile Include="BookListView.cs" />
     <Compile Include="BookView.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="Model.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

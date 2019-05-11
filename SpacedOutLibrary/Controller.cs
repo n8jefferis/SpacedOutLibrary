@@ -14,6 +14,9 @@ namespace SpacedOutLibrary
             "I,Robot","Issac Asimov", "Jurassic Park", "Michael Crichton", "1984", "George Orwell", "Avengers End Game", "Stan Lee",
             };
 
+
+       public  List<Book> Results = new List<Book>();
+
         public Controller()
         {
             for (int i = 0; i < book.Count; i += 2)
@@ -33,8 +36,11 @@ namespace SpacedOutLibrary
             Books[0].DueDate = "15/05/2019";
             Books[0].Status = true;
 
+        }
 
-
+        public void Checkout()
+        {
+            Console.WriteLine();
         }
 
         public void Run()
@@ -43,5 +49,38 @@ namespace SpacedOutLibrary
             blv.Display();
 
         }
+
+        public List<Book> SearchAuthor()
+        {
+            Console.WriteLine("What AUTHOR are you searching for?");
+            string input = Console.ReadLine().ToLower();
+            foreach(Book b in Books)
+            {
+                if (b.Author.ToLower().Contains(input))
+                {
+                    Results.Add(b);
+                }
+                return Results;
+            }
+            return Results;
+        }
+
+        public List<Book> SearchTitle()
+        {
+            Console.WriteLine("What TITLE are you searching for?");
+            string input = Console.ReadLine().ToLower();
+            foreach (Book b in Books)
+            {
+                if (b.Title.ToLower().Contains(input))
+                {
+                    Results.Add(b);
+                }
+                return Results;
+            }
+            return Results;
+        }
+
+
+
     }
 }
